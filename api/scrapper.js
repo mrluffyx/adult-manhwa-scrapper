@@ -87,7 +87,7 @@ async function latest(page) {
     $('body > div.container > div.row > div.col-lg-9.col-md-8 > div.row.top > div .row-list').each((index, element) => {
 
             $elements = $(element)
-            image = $elements.find('.media').find('img').attr('src').replace('https://manhwa18.com','')
+            image = $elements.find('.media').find('img').attr('src')
             url = $elements.find('.media').find('a').attr('href')
             title = $elements.find('.media-body').find('h3').text().trim()
             genres_e = $elements.find('.media-body').find('small')
@@ -100,7 +100,7 @@ async function latest(page) {
                 genres.push($(e).text())
             })
 
-            m_list.push({'title': title, 'image': 'https://manhwa18.com'+image, 'url': url, 'genres': genres, 'last_ch': last_ch, 'last_ch_url': last_ch_url})     
+            m_list.push({'title': title, 'image': image, 'url': url, 'genres': genres, 'last_ch': last_ch, 'last_ch_url': last_ch_url})     
     })
 
     let current = $('.pagination .active').text()
