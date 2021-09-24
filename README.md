@@ -17,7 +17,7 @@ Latest Chapters at: `/api/latest/:page` (example: `/api/latest/1`)
 
 All Manhwa List at: `/api/all` 
 
-Manhwa Info + Chapters at: `/api/info/:slug` (example: `/api/chapter/manga-secret-class` [without .html]) 
+Manhwa Info + Chapters at: `/api/info/:slug` (example: `/api/info/manga-secret-class` [without .html]) 
 
 Manhwa Images List at: `/api/chapter/:slug` (example: `/api/chapter/read-secret-class-chapter-1` [without .html])
 
